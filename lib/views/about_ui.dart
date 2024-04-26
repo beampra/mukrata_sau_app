@@ -30,7 +30,7 @@ class _AboutUIState extends State<AboutUI> {
               'Tech SAU BUFFET',
               style: TextStyle(
                 fontSize: MediaQuery.of(context).size.height * 0.03,
-                color: Colors.deepOrange,
+                color: const Color.fromARGB(255, 250, 86, 36),
                 fontWeight: FontWeight.bold,
               ),
             ),
