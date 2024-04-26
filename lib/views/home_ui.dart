@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mukrata_sau_app/views/about_ui.dart';
@@ -18,8 +18,8 @@ class _HomeUIState extends State<HomeUI> {
   //สร้างตัวแปรเก็บหน้าจอ
   List<Widget> _showUI = [
     CalculatePayBillUI(),
-    AboutUI(),
     MenuShopUI(),
+    AboutUI(),
   ];
   //สร้างตัวแปนกำหนดหน้าจอ
   int _currentShowUI = 1;
@@ -54,10 +54,7 @@ class _HomeUIState extends State<HomeUI> {
             title: 'คิดเงิน',
           ),
           TabItem(
-            icon: Icon(
-              FontAwesomeIcons.home,
-              color: Colors.pink
-            ),
+            icon: Icon(FontAwesomeIcons.home, color: Colors.pink),
             title: 'Home',
           ),
           TabItem(
